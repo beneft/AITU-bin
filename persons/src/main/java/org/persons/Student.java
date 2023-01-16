@@ -17,8 +17,12 @@ public class Student extends Person
         return gpa;
     }
     @Override
+    public String getPosition() {
+        return "Student";
+    }
+    @Override
     public String toString() {
-        return "Student: "+Integer.toString(getId())+". "+name+" "+surname;
+        return "Student: "+super.toString();
     }
     public double getPaymentAmount() {
         if (gpa>2.67)

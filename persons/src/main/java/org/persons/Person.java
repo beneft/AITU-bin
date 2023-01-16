@@ -35,13 +35,10 @@ public abstract class Person implements Payable,Comparable<Person>
     public void setSurname(String surname) {
         this.surname = surname;
     }
-    public String getPosition()
-    {
-      return "Abstract position :) (check this method overriding)";
-    }
+    public abstract String getPosition();
     @Override
     public String toString() {
-        return "THIS IS ABSTRACT CLASS YOU DUMB (check this method overriding)";
+        return Integer.toString(id) + ". "+name + " "+surname;
     }
     public int compareTo(@NotNull Person other_p)
     {

@@ -26,7 +26,7 @@ public class Employee extends Person
     }
     @Override
     public String toString() {
-        return "Employee("+position+"): "+Integer.toString(getId())+". "+name+" "+surname;
+        return "Employee("+position+"): "+super.toString();
     }
     public double getPaymentAmount() {
         return salary;
